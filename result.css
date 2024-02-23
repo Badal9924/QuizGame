@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result_container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 35px;
+    margin-top: -15px;
+}
+.progressbar_container{
+    background-color: #FF7A7A;
+    width: 450px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.retry_btn{
+    background-color: #35BD3A;
+    padding: 7px 10px 7px 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid #35BD3A;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.retry_btn:hover{
+    transform: scale(1.1);
+}
+.x{
+    font-size: 15px;
+}
+.progress_value{
+    width: 0%;
+    height: 100%;
+    background-color: #35BD3A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    transition: all 1s linear;
+}
+.results{
+    margin-top: 15px;
+    text-align: center;
+}
+.comment{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:482px){
+    .progressbar_container{
+        height: 40px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .progressbar_container{
+        height: 30px;
+        width: 260px;
+    }
+    .ing{
+        height: 100px;
+        width: 210px;
+    }
+}
